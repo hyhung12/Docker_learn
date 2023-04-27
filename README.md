@@ -3,9 +3,8 @@
 - Why Docker?
 + Install software easily w/o set up dependencies
 
-- Image: single file + config required to run a program
-- Container (program): instance of image, has its own memory
-+ a running process with computer resources
+- Image (blueprint): read-only file that contains all the necessary components to run an application
+- Container (program): lightweight, isolated environment that includes all the necessary components
 
 Docker: Client (take our cmd), Server, Hub(has free image)
 
