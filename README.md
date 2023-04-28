@@ -43,5 +43,12 @@ docker stop/kill <container-id>
 docker exec -it <container-id>
 -i: take input of terminal
 -t: same as prettier
+docker exec -it <container-id> sh
 ```
+
+## Dockerfile
+- Alpine as base image: has preinstalled set of programs
+FROM alpine / FROM node:14-alpine
+RUN apk add --update redis / RUN npm install
+CMD ["redis-server"] / CMD ["npm", "start"]
 
