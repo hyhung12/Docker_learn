@@ -47,8 +47,11 @@ docker exec -it <container-id> sh
 ```
 
 ## Dockerfile
+![](https://github.com/hyhung12/Docker_learn/blob/main/dockerfile0.png)
 - Alpine as base image: has preinstalled set of programs
+```
 FROM alpine / FROM node:14-alpine
 RUN apk add --update redis / RUN npm install
 CMD ["redis-server"] / CMD ["npm", "start"]
+```
 
