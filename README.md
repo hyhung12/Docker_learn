@@ -57,4 +57,6 @@ CMD ["redis-server"] / CMD ["npm", "start"]
 
 ```
 docker build -t usrn/app_folder .
-
+docker run -p 3000:8080 ayya/simple
+docker run -it usrn/app_folder sh
+```
