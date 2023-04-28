@@ -55,3 +55,6 @@ RUN apk add --update redis / RUN npm install
 CMD ["redis-server"] / CMD ["npm", "start"]
 ```
 
+```
+docker build -t usrn/app_folder .
+
