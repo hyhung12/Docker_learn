@@ -34,4 +34,14 @@ docker start -a <container-id>
 ```
 docker system prune
 ```
+- Stopping containers
+```
+docker stop/kill <container-id>
+```
+- Run additional command in a container
+```
+docker exec -it <container-id>
+-i: take input of terminal
+-t: same as prettier
+```
 
