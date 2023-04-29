@@ -70,3 +70,4 @@ docker-compose down: stop containers
 ```
 - Restart policy
 - Flow: Developing -> Testing -> Deploying
+- Docker volume: map folder
