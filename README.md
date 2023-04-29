@@ -69,3 +69,4 @@ docker-compose down: stop containers
 - Restart policy
 - Flow: Developing -> Testing -> Deploying
 - Docker volume: map folder
+- Travis pull code if it detects change in GitHub repo
