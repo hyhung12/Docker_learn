@@ -65,3 +65,7 @@ docker run -it usrn/app_folder sh
 docker-compose up: start the containers and network
 docker-compose up --build: use Dockerfile to re-build image then start (for changes)
 ```
+docker-compose up -d : Run detached mode (container run in background -> using terminal w/o being blocked)
+docker-compose down: stop containers
+```
+- Restart policy
