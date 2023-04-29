@@ -60,3 +60,8 @@ docker build -t usrn/app_folder .
 docker run -p 3000:8080 ayya/simple
 docker run -it usrn/app_folder sh
 ```
+
+```
+docker-compose up: start the containers and network
+docker-compose up --build: use Dockerfile to re-build image then start (for changes)
+```
