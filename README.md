@@ -16,20 +16,18 @@ docker run hello-world
 ```
 ![](https://github.com/hyhung12/Docker_learn/blob/main/docker1.png)
 
-- Checking which container is running
-```
-docker ps
-docker ps -all (show all contaners that have been created)
-```
-- Create & start a container
-```
-docker create hello-world (create a container from the hello-world image)
-docker start -a <container-id>
-```
-- To start a container that has already exited
-```
-docker start -a <container-id>
-```
+
+| Option | Description |
+|-|-|
+| docker run hello-world | create a container from image |
+| docker ps | show all contaners that are running |
+| docker ps -all | show all contaners |
+| docker create hello-world  | create a container |
+| docker start -a <container-id>  | start a container |
+| data   | create a container from image |
+| data   | create a container from image |
+
+
 - Remove unused all containers & images 
 ```
 docker system prune
