@@ -69,3 +69,4 @@ docker-compose up -d : Run detached mode (container run in background -> using t
 docker-compose down: stop containers
 ```
 - Restart policy
+- Flow: Developing -> Testing -> Deploying
