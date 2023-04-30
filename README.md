@@ -16,7 +16,7 @@ docker run hello-world
 ```
 ![](https://github.com/hyhung12/Docker_learn/blob/main/docker1.png)
 
-| Option | Description |
+| **Command** | **Description** |
 |-|-|
 | docker run hello-world | create a container from image |
 | docker ps | show all contaners that are running |
