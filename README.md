@@ -16,33 +16,20 @@ docker run hello-world
 ```
 ![](https://github.com/hyhung12/Docker_learn/blob/main/docker1.png)
 
-
 | Option | Description |
 |-|-|
 | docker run hello-world | create a container from image |
 | docker ps | show all contaners that are running |
 | docker ps -all | show all contaners |
 | docker create hello-world  | create a container |
-| docker start -a <container-id>  | start a container |
-| data   | create a container from image |
-| data   | create a container from image |
-
-
-- Remove unused all containers & images 
-```
-docker system prune
-```
-- Stopping containers
-```
-docker stop/kill <container-id>
-```
-- Run additional command in a container
-```
-docker exec -it <container-id>
--i: take input of terminal
--t: same as prettier
-docker exec -it <container-id> sh
-```
+| docker start -a "container-id"  | start a container |
+| docker system prune | remove unused all containers & images  |
+| docker stop/kill "container-id"  | stopping containers |
+| docker system prune | remove unused all containers & images  |
+| docker exec -it "container-id" | **run additional command in a container** |
+| docker exec -it "container-id" sh ||
+| -i: take input of terminal ||
+| -t: same as prettier  ||
 
 ## Dockerfile
 ![](https://github.com/hyhung12/Docker_learn/blob/main/dockerfile0.png)
@@ -59,13 +46,17 @@ docker run -p 3000:8080 ayya/simple
 docker run -it usrn/app_folder sh
 ```
 
-```
-docker-compose up: start the containers and network
-docker-compose up --build: use Dockerfile to re-build image then start (for changes)
-```
-docker-compose up -d : Run detached mode (container run in background -> using terminal w/o being blocked)
-docker-compose down: stop containers
-```
+| Option | Description |
+|-|-|
+| docker-compose up | start the containers and network |
+| docker-compose up --build | use Dockerfile to re-build image then start (for changes) |
+| docker-compose up -d  | run in detached mode (container run in background -> using terminal w/o being blocked) |
+| docker-compose down | stop containers |
+|||
+|  ||
+|  ||
+
+
 - Restart policy
 - Flow: Developing -> Testing -> Deploying
 - Docker volume: map folder
