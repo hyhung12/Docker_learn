@@ -45,6 +45,8 @@ docker build -t usrn/app_folder .
 docker run -p 3000:8080 ayya/simple
 docker run -it usrn/app_folder sh
 ```
+## Docker Compose
+- simplify the command and the management of multi-container -> need docker-compose.yml
 
 | Option | Description |
 |-|-|
