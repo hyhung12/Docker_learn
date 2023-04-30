@@ -58,8 +58,24 @@ docker run -it usrn/app_folder sh
 |  ||
 |  ||
 
-
+## Docker Volume
+```
+version: '3'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    port:
+      - "3000:3000"
+    volumes:
+      - /app/node_modules
+      - .:app
+```
+- .:app: Map the pwd to the /app folder
+- /app/node_modules: exclude mode_modules
 - Restart policy
 - Flow: Developing -> Testing -> Deploying
 - Docker volume: map folder
 - Travis pull code if it detects change in GitHub repo
+docker build -f Dockerfile.dev .
