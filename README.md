@@ -78,4 +78,6 @@ services:
 - Flow: Developing -> Testing -> Deploying
 - Docker volume: map folder
 - Travis pull code if it detects change in GitHub repo
-docker build -f Dockerfile.dev .
+- docker build -f Dockerfile.dev .
+
+- docker run <ID> npm run test -- --coverage
